@@ -3,3 +3,4 @@
 PHONE_001.pkf
 PHONE_001.wav
 __pycache__
+*.npy
