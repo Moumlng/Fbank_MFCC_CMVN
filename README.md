@@ -4,19 +4,33 @@
 ## 文件清单
 
 │  main.py 
+
 │  PHONE_001.pkf
+
 │  PHONE_001.wav
+
 │  PHONE_001.wav_Fbank.npy
+
 │  PHONE_001.wav_MFCC.npy
+
 │  PHONE_001.wav_MFCC_diff3_CMVN.npy
+
 │  README.md
+
 │  utils.py
+
 │  requirements.txt
+
 └─img
+
 │      bank_filters.png
+
 │      Fbank_preprocessed.png
+
 │      Fbank_unpreprocessed.png
+
 │      MFCC.png
+
 │      MFCC_diff3.png
 
 - utils.py文件内定义并编写了若干用于特征提取的函数。
