@@ -129,7 +129,7 @@ def MFCC_from_Fbank(Fbank, nDCT=None):
 
 ### ***_MFCC_diff3_CMVN.npy
 
-保存了MFCC特征经三阶差分后z-score归一化的结果，见下图。
+保存了MFCC特征经三阶差分后全局z-score归一化的结果，见下图。
 
 ![MFCC_diff3](/img/MFCC_diff3.png)
 
