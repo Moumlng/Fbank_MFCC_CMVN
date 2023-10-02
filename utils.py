@@ -70,7 +70,7 @@ if __name__ == '__main__':
     plt.pcolor(tt.T[:,500:600], ff.T[:,500:600], Fbank[:,500:600], cmap='Reds', shading='auto')
     plt.xlabel('time/s')
     plt.ylabel('filter number')
-    plt.title('Filter bank Log Amptitude in the first few seconds')
+    plt.title('Filter bank Log Amptitude')
     plt.colorbar()
     
     c_id, MFCC = MFCC_from_Fbank(Fbank)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     cc,tt = np.meshgrid(c_id, t)
     plt.figure(figsize=[10,5])
     norm = colors.TwoSlopeNorm(vmin=MFCC_diff_3.min(), vmax=MFCC_diff_3.max(), vcenter=0)
-    plt.pcolor(tt.T[:,:100], cc.T[:,:100], MFCC_diff_3[:,:100], cmap='bwr', shading='auto', norm=norm)
+    plt.pcolor(tt.T[:,500:600], cc.T[:,500:600], MFCC_diff_3[:,500:600], cmap='bwr', shading='auto', norm=norm)
     plt.xlabel('time/s')
     plt.ylabel('MFCC_id')
     plt.title('MFCC_diff3')
